@@ -12,7 +12,7 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 public class BotApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BotApplication.class, args);
+//        SpringApplication.run(BotApplication.class, args);
         Bot bot = new Bot();
 
         try {
