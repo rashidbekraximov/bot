@@ -2,6 +2,7 @@ package com.example.bot;
 
 import com.example.bot.bot.Bot;
 import com.example.bot.bot.Data;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
@@ -12,7 +13,11 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 public class BotApplication {
 
     public static void main(String[] args) {
-//        SpringApplication.run(BotApplication.class, args);
+        SpringApplication.run(BotApplication.class, args);
+        BotApplication.init();
+    }
+
+    public static void init(){
         Bot bot = new Bot();
 
         try {
