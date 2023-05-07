@@ -13,11 +13,6 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 public class BotApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BotApplication.class, args);
-        BotApplication.init();
-    }
-
-    public static void init(){
         Bot bot = new Bot();
 
         try {
@@ -30,5 +25,4 @@ public class BotApplication {
             Data.printError(e);
         }
     }
-
 }
